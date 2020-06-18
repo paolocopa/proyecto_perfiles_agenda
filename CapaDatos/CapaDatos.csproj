@@ -60,8 +60,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Agenda.cs" />
+    <Compile Include="Carrera.cs" />
+    <Compile Include="CarreraExterna.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="Conexion.cs" />
+    <Compile Include="Docente.cs" />
+    <Compile Include="Estudiante.cs" />
+    <Compile Include="ExamenGrado.cs" />
+    <Compile Include="Facultad.cs" />
+    <Compile Include="Institucion.cs" />
+    <Compile Include="Licenciado.cs" />
+    <Compile Include="PerfilTesis.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
