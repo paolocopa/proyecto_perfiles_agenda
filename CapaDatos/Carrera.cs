@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Data.SQLite;
 using System.Linq;
@@ -9,6 +9,7 @@ namespace CapaDatos
 {
     public class Carrera : Conexion
     {
+        
         public Carrera()
         {
             id = 0;
