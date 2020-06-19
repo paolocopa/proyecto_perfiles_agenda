@@ -32,5 +32,16 @@ namespace CapaPresentacion
             dtgAgenda.DataSource = obj.Agendas();
 
         }
+
+        private void dtgAgenda_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FrmAgenda_agregar frmhijo = new FrmAgenda_agregar();
+            frmhijo.Show();
+        }
     }
 }

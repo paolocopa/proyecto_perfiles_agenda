@@ -570,5 +570,9 @@ namespace CapaPresentacion
 
         #endregion
 
+        private void pnlBarraTitulo_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

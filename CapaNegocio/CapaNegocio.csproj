@@ -61,7 +61,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+<<<<<<< HEAD
     <Compile Include="NegocioAgenda.cs" />
+=======
+    <Compile Include="CN_Agenda.cs" />
+>>>>>>> fernando98cd
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
