@@ -17,6 +17,11 @@ namespace CapaNegocio
         {
             return objagenda.MostrarAgendas();
         }
+        public DataTable AgendasCriterio(string criterio)
+        {
+            return objagenda.MostrarAgendas(criterio);
+
+        }
         
     }
 }

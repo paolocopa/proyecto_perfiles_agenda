@@ -16,20 +16,28 @@ namespace CapaPresentacion
     public partial class FrmAgenda : Form
     {
         NegocioAgenda obj = new NegocioAgenda();
-        public FrmAgenda()
+        public FrmAgenda(string criterio)
         {
             InitializeComponent();
-            cargarTodo();
+            cargarTodo(criterio);
         }
 
         private void label14_Click(object sender, EventArgs e)
         {
 
         }
-        public void cargarTodo()
+        public void cargarTodo(string criterio)
         {
-            
-            dtgAgenda.DataSource = obj.Agendas();
+            if(criterio == null)
+            {
+                dtgAgenda.DataSource = obj.Agendas();
+            }
+            else
+            {
+                dtgAgenda.DataSource = obj.AgendasCriterio(criterio);
+
+            }
+           
 
         }
     }

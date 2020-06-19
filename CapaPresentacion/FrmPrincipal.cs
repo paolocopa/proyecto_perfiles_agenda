@@ -155,7 +155,8 @@ namespace CapaPresentacion
         }
         private void btnAgenda_Click(object sender, EventArgs e)
         {
-            abrirFrmHijo(new FrmAgenda());
+            string criterio = null;
+            abrirFrmHijo(new FrmAgenda(criterio));
             if (esMinimizadoAgenda)
             {
                 mostrarFacultades(pnlAgenda, "agenda");
@@ -400,90 +401,162 @@ namespace CapaPresentacion
         private void btnAdministracion_Click(object sender, EventArgs e)
         {
             carrera = guardarCarreraClickeada(sender);
+            string criterio = carrera;
+            abrirFrmHijo(new FrmAgenda(criterio));
+
+            ocultarCarrerasEmpresariales(); // Facultad Ciencias Empresariales
         }
 
         private void btnTurismo_Click(object sender, EventArgs e)
         {
             carrera = guardarCarreraClickeada(sender);
+            string criterio = carrera; //criterio para fitrar por carrera
+            abrirFrmHijo(new FrmAgenda(criterio)); 
+           
+            ocultarCarrerasEmpresariales(); // Facultad Ciencias Empresariales
         }
 
         private void btnComercial_Click(object sender, EventArgs e)
         {
             carrera = guardarCarreraClickeada(sender);
+            string criterio = carrera;
+            abrirFrmHijo(new FrmAgenda(criterio));
+           
+            ocultarCarrerasEmpresariales(); // Facultad Ciencias Empresariales
         }
 
         private void btnComInternacional_Click(object sender, EventArgs e)
         {
             carrera = guardarCarreraClickeada(sender);
+            string criterio = carrera;
+            abrirFrmHijo(new FrmAgenda(criterio));
+            
+            ocultarCarrerasEmpresariales(); // Facultad Ciencias Empresariales
         }
 
         private void btnMarketing_Click(object sender, EventArgs e)
         {
             carrera = guardarCarreraClickeada(sender);
+            string criterio = carrera;
+            abrirFrmHijo(new FrmAgenda(criterio));
+            
+            ocultarCarrerasEmpresariales(); // Facultad Ciencias Empresariales
         }
 
         private void btnContaduria_Click(object sender, EventArgs e)
         {
             carrera = guardarCarreraClickeada(sender);
+            string criterio = carrera;
+            abrirFrmHijo(new FrmAgenda(criterio));
+           
+            ocultarCarrerasEmpresariales(); // Facultad Ciencias Empresariales
         }
 
         private void btnFinanciera_Click(object sender, EventArgs e)
         {
             carrera = guardarCarreraClickeada(sender);
+            string criterio = carrera;
+            abrirFrmHijo(new FrmAgenda(criterio));
+            ocultarCarrerasEmpresariales(); // Facultad Ciencias Empresariales
         }
 
         private void btnComunicacion_Click(object sender, EventArgs e)
         {
             carrera = guardarCarreraClickeada(sender);
+            string criterio = carrera;
+            abrirFrmHijo(new FrmAgenda(criterio));
+            ocultarCarrerasEmpresariales(); // Facultad Ciencias Empresariales
         }
         private void btnIndustrial_Click(object sender, EventArgs e)
         {
             carrera = guardarCarreraClickeada(sender);
+            string criterio = carrera;
+            abrirFrmHijo(new FrmAgenda(criterio));
+
+            ocultarCarrerasTecnologia(); // Facultad Ciencias y Tecnologia
         }
 
         private void btnPetrolera_Click(object sender, EventArgs e)
         {
             carrera = guardarCarreraClickeada(sender);
+            string criterio = carrera;
+            abrirFrmHijo(new FrmAgenda(criterio));
+           
+            ocultarCarrerasTecnologia(); // Facultad Ciencias y Tecnologia
         }
 
         private void btnElectronica_Click(object sender, EventArgs e)
         {
             carrera = guardarCarreraClickeada(sender);
+            string criterio = carrera;
+            abrirFrmHijo(new FrmAgenda(criterio));
+           
+            ocultarCarrerasTecnologia(); // Facultad Ciencias y Tecnologia
         }
 
         private void iconButton5_Click(object sender, EventArgs e)
         {
             carrera = guardarCarreraClickeada(sender);
+            string criterio = carrera; //carre mecanica
+           abrirFrmHijo(new FrmAgenda(criterio));
+            MessageBox.Show(carrera);
+           
+            ocultarCarrerasTecnologia(); // Facultad Ciencias y Tecnologia
         }
 
-        private void btnMecanica_Click(object sender, EventArgs e)
-        {
-            carrera = guardarCarreraClickeada(sender);
-        }
+       
 
         private void btnRedes_Click(object sender, EventArgs e)
         {
             carrera = guardarCarreraClickeada(sender);
+            string criterio = carrera;
+            abrirFrmHijo(new FrmAgenda(criterio));
+           
+            ocultarCarrerasTecnologia(); // Facultad Ciencias y Tecnologia
         }
 
         private void btnElectrica_Click(object sender, EventArgs e)
         {
             carrera = guardarCarreraClickeada(sender);
+            string criterio = carrera;
+            abrirFrmHijo(new FrmAgenda(criterio));
+            ocultarCarrerasTecnologia(); // Facultad Ciencias y Tecnologia
         }
 
         private void btnDerecho_Click(object sender, EventArgs e)
         {
             carrera = guardarCarreraClickeada(sender);
+            string criterio = carrera;
+            abrirFrmHijo(new FrmAgenda(criterio));
+            ocultarCarrerasJuridicas(); //Facultad Ciencias juridica
         }
 
         private void btnRelInter_Click(object sender, EventArgs e)
         {
             carrera = guardarCarreraClickeada(sender);
+            string criterio = carrera;
+            abrirFrmHijo(new FrmAgenda(criterio));
+            ocultarCarrerasJuridicas(); //Facultad Ciencias juridica
         }
 
-        private void btnPsicologia_Click(object sender, EventArgs e)
+      
+
+        private void btnSistemas_Click(object sender, EventArgs e)
         {
             carrera = guardarCarreraClickeada(sender);
+            string criterio = carrera;
+            abrirFrmHijo(new FrmAgenda(criterio));
+            //MessageBox.Show(carrera + criterio);
+
+            ocultarCarrerasTecnologia(); // Facultad Ciencias y Tecnologia
+        }
+
+        private void btnPsicologia_Click_1(object sender, EventArgs e)
+        {
+            carrera = guardarCarreraClickeada(sender);
+            string criterio = carrera;
+            abrirFrmHijo(new FrmAgenda(criterio));
+            ocultarCarrerasJuridicas(); //Facultad Ciencias juridica
         }
         #endregion
 
@@ -570,5 +643,8 @@ namespace CapaPresentacion
 
         #endregion
 
+       
+
+        
     }
 }
