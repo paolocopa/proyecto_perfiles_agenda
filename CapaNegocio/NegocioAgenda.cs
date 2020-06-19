@@ -17,6 +17,22 @@ namespace CapaNegocio
         {
             return objagenda.MostrarAgendas();
         }
+
+        public bool Agenda_insert(int id, int id_perfil, int id_examen, string fecha, string hora, string aula)
+        {
+            objagenda.Id = id;
+            objagenda.Fecha_presentacion = fecha;
+            objagenda.Hora = hora;
+            objagenda.Aula = aula;
+            objagenda.Id_tesis = id_perfil;
+            objagenda.Id_examen_grado = id_examen;
+
+
+            //falta hacer el metodo en capaDatos.Agenda e instanciarlo s
+            return true;
+
+        }
+        
         public DataTable AgendasCriterio(string criterio)
         {
             return objagenda.MostrarAgendas(criterio);

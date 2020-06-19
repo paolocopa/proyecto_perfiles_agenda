@@ -62,6 +62,7 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="NegocioAgenda.cs" />
+    <Compile Include="CN_Agenda.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
