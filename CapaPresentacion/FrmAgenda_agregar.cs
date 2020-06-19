@@ -13,6 +13,7 @@ namespace CapaPresentacion
 {
     public partial class FrmAgenda_agregar : Form
     {
+        NegocioAgenda obj = new NegocioAgenda();
         private int id;
         private int id_perfil;
         private int id_examen;
@@ -22,6 +23,8 @@ namespace CapaPresentacion
         public FrmAgenda_agregar()
         {
             InitializeComponent();
+            Inicializador();
+            
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
@@ -66,13 +69,83 @@ namespace CapaPresentacion
             hora = dtHora.Value.ToString("HH:mm");
             aula = txtAula.Text.ToString();
 
-            NegocioAgenda obj = new NegocioAgenda();
+           
             if (obj.Agenda_insert(id, id_perfil, id_examen, fecha, hora, aula))
             {
                 MessageBox.Show("Se añadio correctamente");
             }
             else
                 MessageBox.Show("No se registro correctamente");
+        }
+
+        public void Inicializador()
+        {
+            cmbPerfilesAprobados.Items.Clear();
+            LimpiarForm();
+            
+            cmbPerfilesAprobados.DataSource = obj.cargarPerfilAprobadoNoAgendado();
+            cmbPerfilesAprobados.DisplayMember = "tema";
+            cmbPerfilesAprobados.ValueMember = "id";
+
+        }
+
+        public void LimpiarForm()
+        {
+
+            txtRegistro.Clear();
+            txtNombreAlumno.Clear();
+            txtCarrera.Clear();
+            txtTema.Clear();
+            txtTutor.Clear();
+            txtidexamen.Clear();
+        }
+
+
+        public void perfilseleccionado(int id)
+        {
+           
+
+            DataTable perfil = new DataTable();
+            perfil = obj.cargarPerfilSeleccionado(id);
+            DataRow dr = null;
+
+                for (int i = 0; i < perfil.Rows.Count; i++)
+                {
+                    dr = perfil.Rows[i];
+                    txtRegistro.Text = (dr[1].ToString());
+                    txtNombreAlumno.Text = dr[2].ToString() + " " + dr[3].ToString();
+                    txtCarrera.Text = dr[4].ToString();
+                    txtTema.Text = dr[5].ToString();
+                    txtTutor.Text = dr[6].ToString() + " " + dr[7].ToString();
+                    txtidexamen.Text = dr[8].ToString();
+
+                }
+            
+            
+        }
+
+        private void cmbPerfilesAprobados_SelectedValueChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                LimpiarForm();
+
+                if (cmbPerfilesAprobados.SelectedItem.ToString() != "")
+                {
+                    string a = cmbPerfilesAprobados.SelectedValue.ToString();
+                    int id = Convert.ToInt32(a);
+
+                    perfilseleccionado(id);
+
+                }
+            }
+            catch(Exception es)
+            {
+                ///MessageBox.Show(es.Message);
+            }
+
+
+            
         }
     }
 }

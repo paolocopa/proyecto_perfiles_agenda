@@ -12,11 +12,24 @@ namespace CapaNegocio
     public class NegocioAgenda
     {
         Agenda objagenda = new Agenda();
+        PerfilTesis objperfil = new PerfilTesis();
+
+        
+        #region FrmAgenda
 
         public DataTable Agendas()
         {
             return objagenda.MostrarAgendas();
         }
+        public DataTable AgendasCriterio(string criterio)
+        {
+            return objagenda.MostrarAgendas(criterio);
+
+        }
+        #endregion
+
+
+        #region FrmAgenda_agregar
 
         public bool Agenda_insert(int id, int id_perfil, int id_examen, string fecha, string hora, string aula)
         {
@@ -29,15 +42,27 @@ namespace CapaNegocio
 
 
             //falta hacer el metodo en capaDatos.Agenda e instanciarlo s
+            objagenda.NuevaAgenda();
             return true;
 
         }
-        
-        public DataTable AgendasCriterio(string criterio)
+        public DataTable cargarPerfilAprobadoNoAgendado()
         {
-            return objagenda.MostrarAgendas(criterio);
-
+           return objperfil.PerfilesAprobadosNoAgendados();
         }
-        
+        public DataTable cargarPerfilSeleccionado(int id)
+        {
+            return objperfil.PerfilSeleccionado(id);
+        }
+
+
+        #endregion
+
+
+
+
+
+
+
     }
 }
