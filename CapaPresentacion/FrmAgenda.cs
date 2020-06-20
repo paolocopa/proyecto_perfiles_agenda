@@ -43,5 +43,31 @@ namespace CapaPresentacion
             FrmAgenda_agregar frmhijo = new FrmAgenda_agregar();
             frmhijo.Show();
         }
+
+        private void dtgEditarAgenda(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                
+                FrmModificarAgenda FrmAgenModificar = new FrmModificarAgenda();
+                int fila = e.RowIndex;
+                FrmAgenModificar.txtEditarNroAgenda.Text = dtgAgenda.Rows[fila].Cells[0].Value.ToString();
+                FrmAgenModificar.dtFechaAgenda.Text=dtgAgenda.Rows[fila].Cells[1].Value.ToString();
+                FrmAgenModificar.dtEditarHora.Text = dtgAgenda.Rows[fila].Cells[2].Value.ToString();
+                FrmAgenModificar.textEditarAula.Text = dtgAgenda.Rows[fila].Cells[3].Value.ToString();
+                FrmAgenModificar.txtEditarTemaTesis.Text = dtgAgenda.Rows[fila].Cells[4].Value.ToString();
+                FrmAgenModificar.txtEditarRegistro.Text = dtgAgenda.Rows[fila].Cells[6].Value.ToString();
+                FrmAgenModificar.txtEditarNombreAlumno.Text = dtgAgenda.Rows[fila].Cells[7].Value.ToString();
+                FrmAgenModificar.textModificarApellido.Text = dtgAgenda.Rows[fila].Cells[8].Value.ToString();
+                FrmAgenModificar.txtEditarCarrera.Text = dtgAgenda.Rows[fila].Cells[9].Value.ToString();
+                FrmAgenModificar.txtModificarFacultad.Text = dtgAgenda.Rows[fila].Cells[10].Value.ToString();
+
+                FrmAgenModificar.Show();
+            }
+            catch
+            {
+                MessageBox.Show("Debe seleccionar una fila correcta");
+            }
+        }
     }
 }

@@ -88,12 +88,10 @@ namespace CapaDatos
             sqlTransaction.Commit();
 
         }
-        public void ModificarAgenda(int id)
+        public void ModificarAgenda()
         {
             abrirConexion();
-            string updateSQL = " UPDATE agenda " +
-                         " SET fecha_presentacion = '" + Fecha_presentacion + "', hora = '" + Hora + "', aula = '" + Aula + "', id_tesis = " + Id_tesis + ", id_examen_grado = " + Id_examen_grado + " " +
-                         " WHERE id = " + id + " ; ";
+            string updateSQL = " UPDATE agenda  SET fecha_presentacion = '" + Fecha_presentacion + "', hora = '" + Hora + "', aula = '" + Aula + "'  WHERE agenda.id =" + id + " ; ";
 
             SQLiteTransaction sqlTransaction = Cnx.BeginTransaction();
             SQLiteCommand command = new SQLiteCommand(updateSQL, Cnx);

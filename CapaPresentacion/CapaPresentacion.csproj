@@ -168,6 +168,12 @@
     <Compile Include="FrmAgenda_agregar.Designer.cs">
       <DependentUpon>FrmAgenda_agregar.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmModificarAgenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmModificarAgenda.Designer.cs">
+      <DependentUpon>FrmModificarAgenda.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmNuevoPerfil.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -187,6 +193,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmAgenda_agregar.resx">
       <DependentUpon>FrmAgenda_agregar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmModificarAgenda.resx">
+      <DependentUpon>FrmModificarAgenda.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmNuevoPerfil.resx">
       <DependentUpon>FrmNuevoPerfil.cs</DependentUpon>

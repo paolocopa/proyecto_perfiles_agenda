@@ -26,11 +26,22 @@ namespace CapaNegocio
             objagenda.Aula = aula;
             objagenda.Id_tesis = id_perfil;
             objagenda.Id_examen_grado = id_examen;
-
+            objagenda.NuevaAgenda();
 
             //falta hacer el metodo en capaDatos.Agenda e instanciarlo s
             return true;
 
+        }
+        public bool Agenda_Update( string fecha, string hora, string aula, int id)
+        {
+            objagenda.Id = id;
+            objagenda.Fecha_presentacion = fecha;
+            objagenda.Hora = hora;
+            objagenda.Aula = aula;
+
+            objagenda.ModificarAgenda();
+
+            return true;
         }
         
     }

@@ -30,9 +30,9 @@
         {
             this.dtgAgenda = new System.Windows.Forms.DataGridView();
             this.pnlBuscar = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtgAgenda)).BeginInit();
             this.pnlBuscar.SuspendLayout();
             this.SuspendLayout();
@@ -52,6 +52,7 @@
             this.dtgAgenda.Size = new System.Drawing.Size(856, 492);
             this.dtgAgenda.TabIndex = 0;
             this.dtgAgenda.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgAgenda_CellContentClick);
+            this.dtgAgenda.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgEditarAgenda);
             // 
             // pnlBuscar
             // 
@@ -66,12 +67,27 @@
             this.pnlBuscar.Size = new System.Drawing.Size(856, 46);
             this.pnlBuscar.TabIndex = 1;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.button1.Location = new System.Drawing.Point(12, 7);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(134, 25);
+            this.button1.TabIndex = 25;
+            this.button1.Text = "Nuevo agenda";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // txtBuscar
             // 
             this.txtBuscar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBuscar.Location = new System.Drawing.Point(685, 10);
-            this.txtBuscar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtBuscar.Margin = new System.Windows.Forms.Padding(2);
             this.txtBuscar.Name = "txtBuscar";
             this.txtBuscar.Size = new System.Drawing.Size(155, 23);
             this.txtBuscar.TabIndex = 24;
@@ -89,21 +105,6 @@
             this.label14.Text = "Buscar";
             this.label14.Click += new System.EventHandler(this.label14_Click);
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button1.Location = new System.Drawing.Point(12, 7);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(134, 25);
-            this.button1.TabIndex = 25;
-            this.button1.Text = "Nuevo agenda";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // FrmAgenda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -114,7 +115,7 @@
             this.Controls.Add(this.pnlBuscar);
             this.Controls.Add(this.dtgAgenda);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmAgenda";
             this.Text = "Agenda";
             ((System.ComponentModel.ISupportInitialize)(this.dtgAgenda)).EndInit();
