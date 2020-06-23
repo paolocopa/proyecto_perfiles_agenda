@@ -142,6 +142,7 @@ namespace CapaPresentacion
         }
         private void btnPerfiles_Click(object sender, EventArgs e)
         {
+            abrirFrmHijo(new FrmPerfil());
             if (esMinimizadoPerfiles)
             {
                 mostrarFacultades(pnlPerfiles, "perfiles");
