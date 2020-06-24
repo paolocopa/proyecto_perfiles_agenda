@@ -1,6 +1,6 @@
 ﻿namespace CapaPresentacion
 {
-    partial class FrmAgenda
+    partial class FrmPerfil
     {
         /// <summary>
         /// Required designer variable.
@@ -28,35 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dtgAgenda = new System.Windows.Forms.DataGridView();
+            this.dgvTabla = new System.Windows.Forms.DataGridView();
             this.pnlBuscar = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgAgenda)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTabla)).BeginInit();
             this.pnlBuscar.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dtgAgenda
+            // dgvTabla
             // 
-            this.dtgAgenda.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dtgAgenda.BackgroundColor = System.Drawing.Color.Silver;
-            this.dtgAgenda.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dtgAgenda.ColumnHeadersHeight = 29;
-            this.dtgAgenda.Location = new System.Drawing.Point(0, 46);
-            this.dtgAgenda.Margin = new System.Windows.Forms.Padding(0);
-            this.dtgAgenda.Name = "dtgAgenda";
-            this.dtgAgenda.RowHeadersWidth = 51;
-            this.dtgAgenda.Size = new System.Drawing.Size(856, 492);
-            this.dtgAgenda.TabIndex = 0;
-            this.dtgAgenda.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgAgenda_CellContentClick);
+            this.dgvTabla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvTabla.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvTabla.Location = new System.Drawing.Point(0, 0);
+            this.dgvTabla.Name = "dgvTabla";
+            this.dgvTabla.Size = new System.Drawing.Size(856, 492);
+            this.dgvTabla.TabIndex = 1;
             // 
             // pnlBuscar
             // 
             this.pnlBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.pnlBuscar.Controls.Add(this.button1);
             this.pnlBuscar.Controls.Add(this.txtBuscar);
             this.pnlBuscar.Controls.Add(this.label14);
             this.pnlBuscar.Dock = System.Windows.Forms.DockStyle.Top;
@@ -64,22 +55,7 @@
             this.pnlBuscar.Margin = new System.Windows.Forms.Padding(0);
             this.pnlBuscar.Name = "pnlBuscar";
             this.pnlBuscar.Size = new System.Drawing.Size(856, 46);
-            this.pnlBuscar.TabIndex = 1;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button1.Location = new System.Drawing.Point(12, 7);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(134, 25);
-            this.button1.TabIndex = 25;
-            this.button1.Text = "Nuevo agenda";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.pnlBuscar.TabIndex = 2;
             // 
             // txtBuscar
             // 
@@ -102,22 +78,18 @@
             this.label14.Size = new System.Drawing.Size(61, 18);
             this.label14.TabIndex = 23;
             this.label14.Text = "Buscar";
-            this.label14.Click += new System.EventHandler(this.label14_Click);
             // 
-            // FrmAgenda
+            // FrmPerfil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoSize = true;
-            this.BackColor = System.Drawing.Color.LightGray;
-            this.ClientSize = new System.Drawing.Size(856, 537);
+            this.ClientSize = new System.Drawing.Size(856, 492);
             this.Controls.Add(this.pnlBuscar);
-            this.Controls.Add(this.dtgAgenda);
+            this.Controls.Add(this.dgvTabla);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "FrmAgenda";
-            this.Text = "Agenda";
-            ((System.ComponentModel.ISupportInitialize)(this.dtgAgenda)).EndInit();
+            this.Name = "FrmPerfil";
+            this.Text = "FrmPerfil";
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTabla)).EndInit();
             this.pnlBuscar.ResumeLayout(false);
             this.pnlBuscar.PerformLayout();
             this.ResumeLayout(false);
@@ -125,11 +97,9 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dtgAgenda;
+        private System.Windows.Forms.DataGridView dgvTabla;
         private System.Windows.Forms.Panel pnlBuscar;
         private System.Windows.Forms.TextBox txtBuscar;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Button button1;
     }
 }
