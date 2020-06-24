@@ -89,7 +89,7 @@ namespace CapaDatos
         public void NuevaEstudiante()
         {
             abrirConexion();
-            string insertSQL = " INSERT INTO estudiante VALUES (" + Id + ",'" + Registro + "','" + Nombre + "','" + Apellido + "','" + Email + "','" + Telefono + "','" + Celular + "'," + Id_carrera + " ," + Id_tesis + " ,'','' ); ";
+            string insertSQL = " INSERT INTO estudiante VALUES (null ,'" + Registro + "','" + Nombre + "','" + Apellido + "','" + Email + "','" + Telefono + "','" + Celular + "'," + Id_carrera + " ," + Id_tesis + " ,'','' ); ";
             SQLiteTransaction sqlTransaction = Cnx.BeginTransaction();
             SQLiteCommand command = new SQLiteCommand(insertSQL, Cnx);
             command.ExecuteNonQuery();

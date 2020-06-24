@@ -53,20 +53,41 @@ namespace CapaPresentacion
             string celular = txtCelular.Text.ToString();
             int id_carrera = Convert.ToInt32(cmbCarrera.SelectedValue.ToString());
             int id_licenciado = Convert.ToInt32(cmbTutor.SelectedValue.ToString());
-            bool res = obj.Perfil_insert(tema, estado, fecha_presentacion, registro, nombre, apellido, email, telefono, celular, id_carrera, id_licenciado);
-            if(res == true)
+            bool res = obj.Perfil_insert(tema, estado, fecha_presentacion, id_licenciado);
+            bool res2 = obj.Estudiante_insert(registro, nombre, apellido, email, telefono, celular, id_carrera);
+
+            if(res == false || res2 == false)
             {
-                LimpiarForm();
-                MessageBox.Show("perfil registrado correctamente");
+                if(res == false)
+                {
+                    MessageBox.Show("Error al registrar perfil ");
+
+                }
+                else
+                {
+                    if(res2 == false)
+                    {
+                        MessageBox.Show("Error al registrar estudiante ");
+
+                    }
+                    else
+                    {
+                        MessageBox.Show("Error desconcido");
+                    }
+                }
+               
+              
             }
             else
             {
-                MessageBox.Show("Error al registrar perfil ");
+                LimpiarForm();
+                MessageBox.Show("perfil registrado correctamente");
+
             }
 
            // CapaDatos.PerfilTesis obj = new CapaDatos.PerfilTesis();
             //string i = Convert.ToString( obj.UltimoId());
-           // MessageBox.Show(tema + " " + estado + " " + fecha_presentacion + " " + registro + " " + nombre + " " + apellido + " " + email + " " + telefono + " " + celular+" "+id_carrera+" "+id_licenciado);
+          // MessageBox.Show(tema + " " + estado + " " + fecha_presentacion + " " + registro + " " + nombre + " " + apellido + " " + email + " " + telefono + " " + celular+" "+id_carrera+" "+id_licenciado);
 
 
         }

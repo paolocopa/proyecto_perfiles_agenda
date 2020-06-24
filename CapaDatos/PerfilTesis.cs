@@ -71,11 +71,12 @@ namespace CapaDatos
         public void NuevoPerfil()
         {
             abrirConexion();
-            string insertSQL = " INSERT INTO perfil_tesis VALUES (" + Id + ", '" + Tema + "', '" + Estado + "', '" + Fecha_presentacion_perfil + "','" + Fecha_aprobacion_tesis + "', " + Id_licenciado + ", '','' ); ";
+            string insertSQL = " INSERT INTO perfil_tesis VALUES ( null , '" + Tema + "', '" + Estado + "', '" + Fecha_presentacion_perfil + "','" + Fecha_aprobacion_tesis + "', " + Id_licenciado + ", '','' ); ";
             SQLiteTransaction sqlTransaction = Cnx.BeginTransaction();
             SQLiteCommand command = new SQLiteCommand(insertSQL, Cnx);
             command.ExecuteNonQuery();
             sqlTransaction.Commit();
+          
         }
         public void ModificarPerfil(int id)
         {
@@ -138,6 +139,29 @@ namespace CapaDatos
 
             }
             return id;
+        }
+        public DataTable mostrarPerfiles()
+        {
+            string sql = " SELECT es.registro as Registro, es.nombre as Nombre, es.apellido as Apellido , es.email as Email, es.telefono as Telefono, es.celular as Celular, pf.tema as Tema,pf.estado as Estado, pf.fecha_presentacion_perfil as Fecha_Presentacion, lic.nombre as Tutor, ca.nombre as Carrera, fa.nombre as Facultad  "+
+                "  FROM facultad fa INNER JOIN carrera ca on ca.id_facultad = fa.id INNER JOIN estudiante es on es.id_carrera = ca.id INNER JOIN perfil_tesis pf ON es.id_tesis = pf.id INNER JOIN licenciado lic ON pf.id_licenciado = lic.id;  ";
+            abrirConexion();
+            SQLiteDataAdapter da = new SQLiteDataAdapter(sql, Cnx);
+            DataTable ds = new DataTable();
+            da.Fill(ds);
+            Cnx.Close();
+            return ds;
+        }
+        public DataTable mostrarPerfiles(string criterio)
+        {
+            string sql = " SELECT es.registro as Registro, es.nombre as Nombre, es.apellido as Apellido , es.email as Email, es.telefono as Telefono, es.celular as Celular, pf.tema as Tema,pf.estado as Estado, pf.fecha_presentacion_perfil as Fecha_Presentacion, lic.nombre as Tutor, ca.nombre as Carrera, fa.nombre as Facultad  " +
+                "  FROM facultad fa INNER JOIN carrera ca on ca.id_facultad = fa.id INNER JOIN estudiante es on es.id_carrera = ca.id INNER JOIN perfil_tesis pf ON es.id_tesis = pf.id INNER JOIN licenciado lic ON pf.id_licenciado = lic.id  "+
+                " WHERE Carrera LIKE '%" + criterio + "%'  ";
+            abrirConexion();
+            SQLiteDataAdapter da = new SQLiteDataAdapter(sql, Cnx);
+            DataTable ds = new DataTable();
+            da.Fill(ds);
+            Cnx.Close();
+            return ds;
         }
 
 

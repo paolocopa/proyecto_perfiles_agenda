@@ -142,7 +142,8 @@ namespace CapaPresentacion
         }
         private void btnPerfiles_Click(object sender, EventArgs e)
         {
-            abrirFrmHijo(new FrmPerfil());
+            string criterio = null;
+            abrirFrmHijo(new FrmPerfil(criterio));
             if (esMinimizadoPerfiles)
             {
                 mostrarFacultades(pnlPerfiles, "perfiles");
@@ -176,6 +177,7 @@ namespace CapaPresentacion
         #region Mostrar_Ocultar_Carreras
         private void btnEmpresarialesPerfiles_Click(object sender, EventArgs e)
         {
+            //BUTTON FACULTAD EMPRESARIAL - PERFIL
             string facultad = guardarFacultadClickeada(sender);
             facultadEmpresarialesClickeada = true;
             ocultarCarrerasTecnologia();
@@ -360,6 +362,7 @@ namespace CapaPresentacion
 
         private void btnEmpresarialesAgenda_Click(object sender, EventArgs e)
         {
+            //BUTTON FACULTAD EMPRESARIAL - AGENDA
             facultad = guardarFacultadClickeada(sender);
             facultadEmpresarialesClickeada = true;
             ocultarCarrerasTecnologia();

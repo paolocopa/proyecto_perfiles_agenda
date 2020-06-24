@@ -21,6 +21,19 @@ namespace CapaNegocio
 
         }
 
+        #region FrmPerfil
+
+
+        public DataTable Perfiles()
+        {
+            return perfiltesis.mostrarPerfiles();
+        }
+        public DataTable PerfilesCriterio(string criterio)
+        {
+            return perfiltesis.mostrarPerfiles(criterio);
+
+        }
+        #endregion
 
         #region FrmNuevoPerfil
 
@@ -32,7 +45,7 @@ namespace CapaNegocio
         {
             return licenciado.Licenciados();
         }
-        public bool Perfil_insert(string tema, string estado, string fecha_presentacion,string registro, string nombre, string  apellido, string email, string telefono, string celular, int id_carrera, int id_licenciado)
+        public bool Perfil_insert(string tema, string estado, string fecha_presentacion, int id_licenciado)
         {
             try
             {
@@ -42,6 +55,19 @@ namespace CapaNegocio
                 perfiltesis.Fecha_aprobacion_tesis = "";
                 perfiltesis.Id_licenciado = id_licenciado;
                 perfiltesis.NuevoPerfil();
+               
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+           
+        }
+        public bool Estudiante_insert(string registro, string nombre, string apellido, string email, string telefono, string celular, int id_carrera)
+        {
+            try
+            {
                 estudiante.Registro = registro;
                 estudiante.Nombre = nombre;
                 estudiante.Apellido = apellido;
@@ -55,12 +81,8 @@ namespace CapaNegocio
             }
             catch
             {
-                return false;
+                return false; 
             }
-               
-            
-    
-           
         }
         
         #endregion
