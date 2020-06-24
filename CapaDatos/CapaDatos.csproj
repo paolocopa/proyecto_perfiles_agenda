@@ -63,7 +63,6 @@
     <Compile Include="Agenda.cs" />
     <Compile Include="Carrera.cs" />
     <Compile Include="CarreraExterna.cs" />
-    <Compile Include="Class1.cs" />
     <Compile Include="Conexion.cs" />
     <Compile Include="Docente.cs" />
     <Compile Include="Estudiante.cs" />

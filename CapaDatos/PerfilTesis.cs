@@ -125,6 +125,20 @@ namespace CapaDatos
             return items;
 
         }
+        public int UltimoId()
+        {
+            int id = 0;
+            string sql = "  SELECT * FROM perfil_tesis WHERE ID = (SELECT MAX(ID) FROM perfil_tesis); ";
+            abrirConexion();
+            SQLiteCommand cmd = new SQLiteCommand(sql, Cnx);
+            SQLiteDataReader reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                id = reader.GetInt32(0);
+
+            }
+            return id;
+        }
 
 
         #endregion

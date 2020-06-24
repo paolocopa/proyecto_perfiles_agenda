@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SQLite;
 using System.Linq;
 using System.Text;
@@ -75,6 +76,17 @@ namespace CapaDatos
             SQLiteCommand command = new SQLiteCommand(deleteSQL, Cnx);
             command.ExecuteNonQuery();
             sqlTransaction.Commit();
+        }
+        public DataTable Carreras()
+        {
+            abrirConexion();
+            string sql = " SELECT * FROM carrera; ";
+            SQLiteCommand cmd = new SQLiteCommand(sql, Cnx);
+            DataTable items = new DataTable();
+            items.Load(cmd.ExecuteReader());
+            return items;
+
+
         }
 
 
