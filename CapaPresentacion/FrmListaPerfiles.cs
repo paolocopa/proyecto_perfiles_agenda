@@ -21,5 +21,11 @@ namespace CapaPresentacion
         {
             this.Close();
         }
+
+        private void btnEdiar_Click(object sender, EventArgs e)
+        {
+            FrmRevisiones fre = new FrmRevisiones();
+            fre.ShowDialog();
+        }
     }
 }

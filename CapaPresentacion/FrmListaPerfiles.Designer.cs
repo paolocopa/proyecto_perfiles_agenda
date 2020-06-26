@@ -110,6 +110,7 @@
             this.btnEdiar.TabIndex = 19;
             this.btnEdiar.Text = "Editar";
             this.btnEdiar.UseVisualStyleBackColor = false;
+            this.btnEdiar.Click += new System.EventHandler(this.btnEdiar_Click);
             // 
             // dgvPerfiles
             // 
