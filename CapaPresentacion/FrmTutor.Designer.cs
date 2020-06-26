@@ -88,6 +88,7 @@
             this.btnNuevoTutor.TabIndex = 20;
             this.btnNuevoTutor.Text = "Agregar Nuevo";
             this.btnNuevoTutor.UseVisualStyleBackColor = false;
+            this.btnNuevoTutor.Click += new System.EventHandler(this.btnNuevoTutor_Click);
             // 
             // btnEditarTutor
             // 

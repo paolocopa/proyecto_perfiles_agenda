@@ -26,5 +26,11 @@ namespace CapaPresentacion
         {
 
         }
+
+        private void btnNuevoTutor_Click(object sender, EventArgs e)
+        {
+            FrmNewLicenciado fnl = new FrmNewLicenciado();
+            fnl.ShowDialog();
+        }
     }
 }

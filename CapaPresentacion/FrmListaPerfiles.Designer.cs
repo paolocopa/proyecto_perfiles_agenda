@@ -191,6 +191,7 @@
             this.btnCerrar.Size = new System.Drawing.Size(28, 20);
             this.btnCerrar.TabIndex = 1;
             this.btnCerrar.UseVisualStyleBackColor = true;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // FrmListaPerfiles
             // 

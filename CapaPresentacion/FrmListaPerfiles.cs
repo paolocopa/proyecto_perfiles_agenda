@@ -27,5 +27,10 @@ namespace CapaPresentacion
             FrmRevisiones fre = new FrmRevisiones();
             fre.ShowDialog();
         }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
