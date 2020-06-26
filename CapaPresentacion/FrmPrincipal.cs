@@ -8,6 +8,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 using FontAwesome.Sharp;
 
 namespace CapaPresentacion
@@ -45,8 +46,8 @@ namespace CapaPresentacion
         private void btnNuevoPerfil_Click(object sender, EventArgs e)
         {
             activarBoton(sender, ColoresRgb.rojoUtepsa);
-            Form frmNuevoPerfil = new FrmNuevoPerfil();
-            frmNuevoPerfil.Show();
+            abrirFrmHijo(new FrmNuevoPerfil());
+           
         }
         private void btnNuevaDefensa_Click(object sender, EventArgs e)
         {
@@ -414,7 +415,9 @@ namespace CapaPresentacion
         {
             carrera = guardarCarreraClickeada(sender);
             lblTitulo.Text = carrera;
-            //MessageBox.Show(facultad + " " + carrera);
+            abrirFrmHijo(new FrmListaPerfiles());
+            ////MessageBox.Show(facultad + " " + carrera);
+
         }
 
         private void btnTurismo_Click(object sender, EventArgs e)

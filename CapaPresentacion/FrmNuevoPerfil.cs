@@ -34,5 +34,11 @@ namespace CapaPresentacion
         {
             this.Close();
         }
+
+        private void btnElegirTutor_Click(object sender, EventArgs e)
+        {
+            FrmTutor ftu = new FrmTutor();
+            ftu.ShowDialog();
+        }
     }
 }
