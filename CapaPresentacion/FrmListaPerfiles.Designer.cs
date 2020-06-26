@@ -43,10 +43,8 @@
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pnlBarraTituloLpl = new System.Windows.Forms.Panel();
             this.btnCerrar = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPerfiles)).BeginInit();
-            this.pnlBarraTituloLpl.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnBuscarPerfil
@@ -176,17 +174,6 @@
             this.Column9.HeaderText = "Estado";
             this.Column9.Name = "Column9";
             // 
-            // pnlBarraTituloLpl
-            // 
-            this.pnlBarraTituloLpl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
-            this.pnlBarraTituloLpl.Controls.Add(this.btnCerrar);
-            this.pnlBarraTituloLpl.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlBarraTituloLpl.Location = new System.Drawing.Point(0, 0);
-            this.pnlBarraTituloLpl.Margin = new System.Windows.Forms.Padding(2);
-            this.pnlBarraTituloLpl.Name = "pnlBarraTituloLpl";
-            this.pnlBarraTituloLpl.Size = new System.Drawing.Size(876, 27);
-            this.pnlBarraTituloLpl.TabIndex = 25;
-            // 
             // btnCerrar
             // 
             this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -197,11 +184,11 @@
             this.btnCerrar.IconChar = FontAwesome.Sharp.IconChar.Times;
             this.btnCerrar.IconColor = System.Drawing.Color.Black;
             this.btnCerrar.IconSize = 16;
-            this.btnCerrar.Location = new System.Drawing.Point(841, 1);
+            this.btnCerrar.Location = new System.Drawing.Point(839, 9);
             this.btnCerrar.Margin = new System.Windows.Forms.Padding(0);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Rotation = 0D;
-            this.btnCerrar.Size = new System.Drawing.Size(34, 29);
+            this.btnCerrar.Size = new System.Drawing.Size(28, 20);
             this.btnCerrar.TabIndex = 1;
             this.btnCerrar.UseVisualStyleBackColor = true;
             // 
@@ -211,7 +198,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(34)))), ((int)(((byte)(39)))));
             this.ClientSize = new System.Drawing.Size(876, 533);
-            this.Controls.Add(this.pnlBarraTituloLpl);
+            this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.btnBuscarPerfil);
             this.Controls.Add(this.lblBuscar);
             this.Controls.Add(this.txtFiltarPerfil);
@@ -222,7 +209,6 @@
             this.Name = "FrmListaPerfiles";
             this.Text = "FrmListaPerfiles";
             ((System.ComponentModel.ISupportInitialize)(this.dgvPerfiles)).EndInit();
-            this.pnlBarraTituloLpl.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -245,7 +231,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
-        private System.Windows.Forms.Panel pnlBarraTituloLpl;
         private FontAwesome.Sharp.IconButton btnCerrar;
     }
 }

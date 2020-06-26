@@ -40,5 +40,10 @@ namespace CapaPresentacion
             FrmTutor ftu = new FrmTutor();
             ftu.ShowDialog();
         }
+
+        private void btnCancelarNuevop_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

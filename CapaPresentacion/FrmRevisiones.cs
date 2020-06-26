@@ -31,5 +31,25 @@ namespace CapaPresentacion
         {
 
         }
+
+        private void tabPage3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnCancel2Rev_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnCancelarEdit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
