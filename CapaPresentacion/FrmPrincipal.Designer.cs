@@ -57,6 +57,7 @@
             this.btnRelInter = new FontAwesome.Sharp.IconButton();
             this.btnDerecho = new FontAwesome.Sharp.IconButton();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lblTitulo = new System.Windows.Forms.Label();
             this.pnlFrmHijo = new System.Windows.Forms.Panel();
             this.pnlCarrerasEmpresariales = new System.Windows.Forms.Panel();
             this.btnComunicacion = new FontAwesome.Sharp.IconButton();
@@ -75,7 +76,6 @@
             this.btnElectronica = new FontAwesome.Sharp.IconButton();
             this.btnPetrolera = new FontAwesome.Sharp.IconButton();
             this.btnIndustrial = new FontAwesome.Sharp.IconButton();
-            this.lblTitulo = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.pnlNuevaDefensa.SuspendLayout();
             this.pnlMenu.SuspendLayout();
@@ -96,6 +96,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
             this.panel1.Controls.Add(this.pnlNuevaDefensa);
+            this.panel1.Controls.Add(this.pnlCarrerasTenologia);
             this.panel1.Controls.Add(this.pnlMenu);
             this.panel1.Controls.Add(this.pnlNuevoPerfil);
             this.panel1.Controls.Add(this.pnlLogo);
@@ -690,11 +691,23 @@
             this.panel2.Size = new System.Drawing.Size(860, 45);
             this.panel2.TabIndex = 15;
             // 
+            // lblTitulo
+            // 
+            this.lblTitulo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblTitulo.Location = new System.Drawing.Point(125, 9);
+            this.lblTitulo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(598, 29);
+            this.lblTitulo.TabIndex = 24;
+            this.lblTitulo.Text = "Título";
+            this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // pnlFrmHijo
             // 
             this.pnlFrmHijo.BackColor = System.Drawing.Color.Silver;
             this.pnlFrmHijo.Controls.Add(this.pnlCarrerasEmpresariales);
-            this.pnlFrmHijo.Controls.Add(this.pnlCarrerasTenologia);
             this.pnlFrmHijo.Controls.Add(this.pnlCarrerasJuridicas);
             this.pnlFrmHijo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlFrmHijo.ImeMode = System.Windows.Forms.ImeMode.Off;
@@ -715,7 +728,7 @@
             this.pnlCarrerasEmpresariales.Controls.Add(this.btnComercial);
             this.pnlCarrerasEmpresariales.Controls.Add(this.btnTurismo);
             this.pnlCarrerasEmpresariales.Controls.Add(this.btnAdministracion);
-            this.pnlCarrerasEmpresariales.Location = new System.Drawing.Point(0, 181);
+            this.pnlCarrerasEmpresariales.Location = new System.Drawing.Point(1, 191);
             this.pnlCarrerasEmpresariales.Margin = new System.Windows.Forms.Padding(0);
             this.pnlCarrerasEmpresariales.MaximumSize = new System.Drawing.Size(270, 226);
             this.pnlCarrerasEmpresariales.MinimumSize = new System.Drawing.Size(270, 226);
@@ -964,7 +977,7 @@
             this.pnlCarrerasTenologia.Controls.Add(this.btnElectronica);
             this.pnlCarrerasTenologia.Controls.Add(this.btnPetrolera);
             this.pnlCarrerasTenologia.Controls.Add(this.btnIndustrial);
-            this.pnlCarrerasTenologia.Location = new System.Drawing.Point(0, 241);
+            this.pnlCarrerasTenologia.Location = new System.Drawing.Point(258, 295);
             this.pnlCarrerasTenologia.Margin = new System.Windows.Forms.Padding(0);
             this.pnlCarrerasTenologia.MinimumSize = new System.Drawing.Size(274, 193);
             this.pnlCarrerasTenologia.Name = "pnlCarrerasTenologia";
@@ -1173,19 +1186,6 @@
             this.btnIndustrial.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnIndustrial.UseVisualStyleBackColor = false;
             this.btnIndustrial.Click += new System.EventHandler(this.btnIndustrial_Click);
-            // 
-            // lblTitulo
-            // 
-            this.lblTitulo.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblTitulo.Location = new System.Drawing.Point(125, 9);
-            this.lblTitulo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(598, 29);
-            this.lblTitulo.TabIndex = 24;
-            this.lblTitulo.Text = "Título";
-            this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // FrmPrincipal
             // 

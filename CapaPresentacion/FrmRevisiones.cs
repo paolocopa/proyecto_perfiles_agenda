@@ -51,5 +51,17 @@ namespace CapaPresentacion
         {
             this.Close();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            FrmNewLicenciado otr = new FrmNewLicenciado();
+            otr.ShowDialog();
+        }
+
+        private void btncargarLicen2Rev_Click(object sender, EventArgs e)
+        {
+            FrmNewLicenciado otr2 = new FrmNewLicenciado();
+            otr2.ShowDialog();
+        }
     }
 }

@@ -26,5 +26,10 @@ namespace CapaPresentacion
         {
 
         }
+
+        private void btnCancelarTutor_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -30,6 +30,7 @@
         {
             this.General = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.btnCancelarEdit = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -58,6 +59,7 @@
             this.dtFechaDef = new System.Windows.Forms.DateTimePicker();
             this.cbxTipoDef = new System.Windows.Forms.ComboBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.btnCancel2Rev = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.textBox7 = new System.Windows.Forms.TextBox();
@@ -77,19 +79,6 @@
             this.label32 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.btnGuardar1Rev = new System.Windows.Forms.Button();
-            this.btnCargarTribu2 = new System.Windows.Forms.Button();
-            this.btnElegirTribu1 = new System.Windows.Forms.Button();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.btnCancelarEdit = new System.Windows.Forms.Button();
-            this.btnCancel2Rev = new System.Windows.Forms.Button();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
@@ -106,6 +95,17 @@
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
+            this.btnGuardar1Rev = new System.Windows.Forms.Button();
+            this.btnCargarTribu2 = new System.Windows.Forms.Button();
+            this.btnElegirTribu1 = new System.Windows.Forms.Button();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.button1 = new System.Windows.Forms.Button();
             this.tabControl2 = new System.Windows.Forms.TabControl();
@@ -144,7 +144,7 @@
             this.label48 = new System.Windows.Forms.Label();
             this.label49 = new System.Windows.Forms.Label();
             this.btnGuardar2Rev = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btncargarLicen2Rev = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.dateTimePicker19 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker20 = new System.Windows.Forms.DateTimePicker();
@@ -215,6 +215,22 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "General";
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
+            // 
+            // btnCancelarEdit
+            // 
+            this.btnCancelarEdit.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnCancelarEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
+            this.btnCancelarEdit.FlatAppearance.BorderSize = 0;
+            this.btnCancelarEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelarEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelarEdit.ForeColor = System.Drawing.Color.White;
+            this.btnCancelarEdit.Location = new System.Drawing.Point(371, 415);
+            this.btnCancelarEdit.Name = "btnCancelarEdit";
+            this.btnCancelarEdit.Size = new System.Drawing.Size(100, 35);
+            this.btnCancelarEdit.TabIndex = 38;
+            this.btnCancelarEdit.Text = "Cancelar";
+            this.btnCancelarEdit.UseVisualStyleBackColor = false;
+            this.btnCancelarEdit.Click += new System.EventHandler(this.btnCancelarEdit_Click);
             // 
             // label13
             // 
@@ -474,6 +490,22 @@
             this.tabPage2.Text = "Primera Revision";
             this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
             // 
+            // btnCancel2Rev
+            // 
+            this.btnCancel2Rev.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnCancel2Rev.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
+            this.btnCancel2Rev.FlatAppearance.BorderSize = 0;
+            this.btnCancel2Rev.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancel2Rev.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel2Rev.ForeColor = System.Drawing.Color.White;
+            this.btnCancel2Rev.Location = new System.Drawing.Point(364, 407);
+            this.btnCancel2Rev.Name = "btnCancel2Rev";
+            this.btnCancel2Rev.Size = new System.Drawing.Size(100, 35);
+            this.btnCancel2Rev.TabIndex = 39;
+            this.btnCancel2Rev.Text = "Cancelar";
+            this.btnCancel2Rev.UseVisualStyleBackColor = false;
+            this.btnCancel2Rev.Click += new System.EventHandler(this.btnCancel2Rev_Click);
+            // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage3);
@@ -673,151 +705,6 @@
             this.tabPage4.TabIndex = 1;
             this.tabPage4.Text = "           TRIBUNAL 2";
             // 
-            // btnGuardar1Rev
-            // 
-            this.btnGuardar1Rev.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnGuardar1Rev.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
-            this.btnGuardar1Rev.FlatAppearance.BorderSize = 0;
-            this.btnGuardar1Rev.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGuardar1Rev.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar1Rev.ForeColor = System.Drawing.Color.White;
-            this.btnGuardar1Rev.Location = new System.Drawing.Point(470, 407);
-            this.btnGuardar1Rev.Name = "btnGuardar1Rev";
-            this.btnGuardar1Rev.Size = new System.Drawing.Size(100, 35);
-            this.btnGuardar1Rev.TabIndex = 37;
-            this.btnGuardar1Rev.Text = "Guardar";
-            this.btnGuardar1Rev.UseVisualStyleBackColor = false;
-            // 
-            // btnCargarTribu2
-            // 
-            this.btnCargarTribu2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
-            this.btnCargarTribu2.FlatAppearance.BorderSize = 0;
-            this.btnCargarTribu2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
-            this.btnCargarTribu2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCargarTribu2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnCargarTribu2.Location = new System.Drawing.Point(282, 72);
-            this.btnCargarTribu2.Name = "btnCargarTribu2";
-            this.btnCargarTribu2.Size = new System.Drawing.Size(65, 20);
-            this.btnCargarTribu2.TabIndex = 5;
-            this.btnCargarTribu2.Text = "Cargar";
-            this.btnCargarTribu2.UseVisualStyleBackColor = false;
-            // 
-            // btnElegirTribu1
-            // 
-            this.btnElegirTribu1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
-            this.btnElegirTribu1.FlatAppearance.BorderSize = 0;
-            this.btnElegirTribu1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
-            this.btnElegirTribu1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnElegirTribu1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnElegirTribu1.Location = new System.Drawing.Point(282, 36);
-            this.btnElegirTribu1.Name = "btnElegirTribu1";
-            this.btnElegirTribu1.Size = new System.Drawing.Size(65, 20);
-            this.btnElegirTribu1.TabIndex = 5;
-            this.btnElegirTribu1.Text = "Cargar";
-            this.btnElegirTribu1.UseVisualStyleBackColor = false;
-            // 
-            // dateTimePicker2
-            // 
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker2.Location = new System.Drawing.Point(475, 72);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(99, 20);
-            this.dateTimePicker2.TabIndex = 2;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(475, 40);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(99, 20);
-            this.dateTimePicker1.TabIndex = 2;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(82, 72);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(194, 20);
-            this.textBox2.TabIndex = 1;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(384, 76);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(81, 16);
-            this.label17.TabIndex = 0;
-            this.label17.Text = "Empaste T2";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(6, 73);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(70, 16);
-            this.label15.TabIndex = 0;
-            this.label15.Text = "Tribunal 2:";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(82, 36);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(194, 20);
-            this.textBox1.TabIndex = 1;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(384, 40);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(81, 16);
-            this.label16.TabIndex = 0;
-            this.label16.Text = "Empaste T1";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(6, 37);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(70, 16);
-            this.label14.TabIndex = 0;
-            this.label14.Text = "Tribunal 1:";
-            // 
-            // btnCancelarEdit
-            // 
-            this.btnCancelarEdit.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnCancelarEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
-            this.btnCancelarEdit.FlatAppearance.BorderSize = 0;
-            this.btnCancelarEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancelarEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelarEdit.ForeColor = System.Drawing.Color.White;
-            this.btnCancelarEdit.Location = new System.Drawing.Point(371, 415);
-            this.btnCancelarEdit.Name = "btnCancelarEdit";
-            this.btnCancelarEdit.Size = new System.Drawing.Size(100, 35);
-            this.btnCancelarEdit.TabIndex = 38;
-            this.btnCancelarEdit.Text = "Cancelar";
-            this.btnCancelarEdit.UseVisualStyleBackColor = false;
-            this.btnCancelarEdit.Click += new System.EventHandler(this.btnCancelarEdit_Click);
-            // 
-            // btnCancel2Rev
-            // 
-            this.btnCancel2Rev.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnCancel2Rev.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
-            this.btnCancel2Rev.FlatAppearance.BorderSize = 0;
-            this.btnCancel2Rev.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancel2Rev.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel2Rev.ForeColor = System.Drawing.Color.White;
-            this.btnCancel2Rev.Location = new System.Drawing.Point(364, 407);
-            this.btnCancel2Rev.Name = "btnCancel2Rev";
-            this.btnCancel2Rev.Size = new System.Drawing.Size(100, 35);
-            this.btnCancel2Rev.TabIndex = 39;
-            this.btnCancel2Rev.Text = "Cancelar";
-            this.btnCancel2Rev.UseVisualStyleBackColor = false;
-            this.btnCancel2Rev.Click += new System.EventHandler(this.btnCancel2Rev_Click);
-            // 
             // textBox3
             // 
             this.textBox3.Location = new System.Drawing.Point(347, 175);
@@ -954,13 +841,126 @@
             this.label25.TabIndex = 26;
             this.label25.Text = "Comentario";
             // 
+            // btnGuardar1Rev
+            // 
+            this.btnGuardar1Rev.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnGuardar1Rev.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
+            this.btnGuardar1Rev.FlatAppearance.BorderSize = 0;
+            this.btnGuardar1Rev.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardar1Rev.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardar1Rev.ForeColor = System.Drawing.Color.White;
+            this.btnGuardar1Rev.Location = new System.Drawing.Point(470, 407);
+            this.btnGuardar1Rev.Name = "btnGuardar1Rev";
+            this.btnGuardar1Rev.Size = new System.Drawing.Size(100, 35);
+            this.btnGuardar1Rev.TabIndex = 37;
+            this.btnGuardar1Rev.Text = "Guardar";
+            this.btnGuardar1Rev.UseVisualStyleBackColor = false;
+            // 
+            // btnCargarTribu2
+            // 
+            this.btnCargarTribu2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
+            this.btnCargarTribu2.FlatAppearance.BorderSize = 0;
+            this.btnCargarTribu2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.btnCargarTribu2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCargarTribu2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnCargarTribu2.Location = new System.Drawing.Point(282, 72);
+            this.btnCargarTribu2.Name = "btnCargarTribu2";
+            this.btnCargarTribu2.Size = new System.Drawing.Size(65, 20);
+            this.btnCargarTribu2.TabIndex = 5;
+            this.btnCargarTribu2.Text = "Cargar";
+            this.btnCargarTribu2.UseVisualStyleBackColor = false;
+            // 
+            // btnElegirTribu1
+            // 
+            this.btnElegirTribu1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
+            this.btnElegirTribu1.FlatAppearance.BorderSize = 0;
+            this.btnElegirTribu1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.btnElegirTribu1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnElegirTribu1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnElegirTribu1.Location = new System.Drawing.Point(282, 36);
+            this.btnElegirTribu1.Name = "btnElegirTribu1";
+            this.btnElegirTribu1.Size = new System.Drawing.Size(65, 20);
+            this.btnElegirTribu1.TabIndex = 5;
+            this.btnElegirTribu1.Text = "Cargar";
+            this.btnElegirTribu1.UseVisualStyleBackColor = false;
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker2.Location = new System.Drawing.Point(475, 72);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(99, 20);
+            this.dateTimePicker2.TabIndex = 2;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(475, 40);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(99, 20);
+            this.dateTimePicker1.TabIndex = 2;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(82, 72);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(194, 20);
+            this.textBox2.TabIndex = 1;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(384, 76);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(81, 16);
+            this.label17.TabIndex = 0;
+            this.label17.Text = "Empaste T2";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(6, 73);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(70, 16);
+            this.label15.TabIndex = 0;
+            this.label15.Text = "Tribunal 2:";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(82, 36);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(194, 20);
+            this.textBox1.TabIndex = 1;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(384, 40);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(81, 16);
+            this.label16.TabIndex = 0;
+            this.label16.Text = "Empaste T1";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(6, 37);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(70, 16);
+            this.label14.TabIndex = 0;
+            this.label14.Text = "Tribunal 1:";
+            // 
             // tabPage5
             // 
             this.tabPage5.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.tabPage5.Controls.Add(this.button1);
             this.tabPage5.Controls.Add(this.tabControl2);
             this.tabPage5.Controls.Add(this.btnGuardar2Rev);
-            this.tabPage5.Controls.Add(this.button3);
+            this.tabPage5.Controls.Add(this.btncargarLicen2Rev);
             this.tabPage5.Controls.Add(this.button4);
             this.tabPage5.Controls.Add(this.dateTimePicker19);
             this.tabPage5.Controls.Add(this.dateTimePicker20);
@@ -1342,19 +1342,20 @@
             this.btnGuardar2Rev.Text = "Guardar";
             this.btnGuardar2Rev.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // btncargarLicen2Rev
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button3.Location = new System.Drawing.Point(282, 72);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(65, 20);
-            this.button3.TabIndex = 48;
-            this.button3.Text = "Cargar";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btncargarLicen2Rev.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
+            this.btncargarLicen2Rev.FlatAppearance.BorderSize = 0;
+            this.btncargarLicen2Rev.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.btncargarLicen2Rev.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btncargarLicen2Rev.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btncargarLicen2Rev.Location = new System.Drawing.Point(282, 72);
+            this.btncargarLicen2Rev.Name = "btncargarLicen2Rev";
+            this.btncargarLicen2Rev.Size = new System.Drawing.Size(65, 20);
+            this.btncargarLicen2Rev.TabIndex = 48;
+            this.btncargarLicen2Rev.Text = "Cargar";
+            this.btncargarLicen2Rev.UseVisualStyleBackColor = false;
+            this.btncargarLicen2Rev.Click += new System.EventHandler(this.btncargarLicen2Rev_Click);
             // 
             // button4
             // 
@@ -1369,6 +1370,7 @@
             this.button4.TabIndex = 49;
             this.button4.Text = "Cargar";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // dateTimePicker19
             // 
@@ -1590,7 +1592,7 @@
         private System.Windows.Forms.Label label48;
         private System.Windows.Forms.Label label49;
         private System.Windows.Forms.Button btnGuardar2Rev;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btncargarLicen2Rev;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.DateTimePicker dateTimePicker19;
         private System.Windows.Forms.DateTimePicker dateTimePicker20;

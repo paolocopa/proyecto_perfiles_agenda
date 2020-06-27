@@ -31,37 +31,37 @@
             this.btnCancelarTutor = new System.Windows.Forms.Button();
             this.btnGuardarLicen = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cbxDocenteTip = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.lblCelu = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtNombreLic = new System.Windows.Forms.TextBox();
-            this.txtApellidoLic = new System.Windows.Forms.TextBox();
-            this.txtDescripcionLic = new System.Windows.Forms.TextBox();
-            this.txtEmailLic = new System.Windows.Forms.TextBox();
-            this.txtTelefonoLic = new System.Windows.Forms.TextBox();
             this.txtCelularLic = new System.Windows.Forms.TextBox();
+            this.txtTelefonoLic = new System.Windows.Forms.TextBox();
+            this.txtEmailLic = new System.Windows.Forms.TextBox();
+            this.txtDescripcionLic = new System.Windows.Forms.TextBox();
+            this.txtApellidoLic = new System.Windows.Forms.TextBox();
+            this.txtNombreLic = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.cbxTipoLic = new System.Windows.Forms.ComboBox();
-            this.cbxFuncionLic = new System.Windows.Forms.ComboBox();
-            this.txtDescLic = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.cbxDocenteTip = new System.Windows.Forms.ComboBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.cbxInstitucion = new System.Windows.Forms.ComboBox();
-            this.label11 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.cbxCarreraLic = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.cbxInstitucion = new System.Windows.Forms.ComboBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtDescLic = new System.Windows.Forms.TextBox();
+            this.cbxFuncionLic = new System.Windows.Forms.ComboBox();
+            this.cbxTipoLic = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnCancelarTutor
@@ -77,6 +77,7 @@
             this.btnCancelarTutor.TabIndex = 25;
             this.btnCancelarTutor.Text = "Cancelar";
             this.btnCancelarTutor.UseVisualStyleBackColor = false;
+            this.btnCancelarTutor.Click += new System.EventHandler(this.btnCancelarTutor_Click);
             // 
             // btnGuardarLicen
             // 
@@ -116,6 +117,26 @@
             this.groupBox1.TabIndex = 27;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "LICENCIADO";
+            // 
+            // cbxDocenteTip
+            // 
+            this.cbxDocenteTip.FormattingEnabled = true;
+            this.cbxDocenteTip.Items.AddRange(new object[] {
+            "SI",
+            "NO"});
+            this.cbxDocenteTip.Location = new System.Drawing.Point(142, 183);
+            this.cbxDocenteTip.Name = "cbxDocenteTip";
+            this.cbxDocenteTip.Size = new System.Drawing.Size(235, 24);
+            this.cbxDocenteTip.TabIndex = 7;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(59, 186);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(77, 16);
+            this.label7.TabIndex = 6;
+            this.label7.Text = "DOCENTE:";
             // 
             // lblCelu
             // 
@@ -171,33 +192,12 @@
             this.label1.TabIndex = 6;
             this.label1.Text = "NOMBRE:";
             // 
-            // txtNombreLic
+            // txtCelularLic
             // 
-            this.txtNombreLic.Location = new System.Drawing.Point(142, 27);
-            this.txtNombreLic.Name = "txtNombreLic";
-            this.txtNombreLic.Size = new System.Drawing.Size(235, 22);
-            this.txtNombreLic.TabIndex = 0;
-            // 
-            // txtApellidoLic
-            // 
-            this.txtApellidoLic.Location = new System.Drawing.Point(142, 53);
-            this.txtApellidoLic.Name = "txtApellidoLic";
-            this.txtApellidoLic.Size = new System.Drawing.Size(235, 22);
-            this.txtApellidoLic.TabIndex = 1;
-            // 
-            // txtDescripcionLic
-            // 
-            this.txtDescripcionLic.Location = new System.Drawing.Point(142, 79);
-            this.txtDescripcionLic.Name = "txtDescripcionLic";
-            this.txtDescripcionLic.Size = new System.Drawing.Size(235, 22);
-            this.txtDescripcionLic.TabIndex = 2;
-            // 
-            // txtEmailLic
-            // 
-            this.txtEmailLic.Location = new System.Drawing.Point(142, 105);
-            this.txtEmailLic.Name = "txtEmailLic";
-            this.txtEmailLic.Size = new System.Drawing.Size(235, 22);
-            this.txtEmailLic.TabIndex = 3;
+            this.txtCelularLic.Location = new System.Drawing.Point(142, 157);
+            this.txtCelularLic.Name = "txtCelularLic";
+            this.txtCelularLic.Size = new System.Drawing.Size(235, 22);
+            this.txtCelularLic.TabIndex = 5;
             // 
             // txtTelefonoLic
             // 
@@ -206,12 +206,33 @@
             this.txtTelefonoLic.Size = new System.Drawing.Size(235, 22);
             this.txtTelefonoLic.TabIndex = 4;
             // 
-            // txtCelularLic
+            // txtEmailLic
             // 
-            this.txtCelularLic.Location = new System.Drawing.Point(142, 157);
-            this.txtCelularLic.Name = "txtCelularLic";
-            this.txtCelularLic.Size = new System.Drawing.Size(235, 22);
-            this.txtCelularLic.TabIndex = 5;
+            this.txtEmailLic.Location = new System.Drawing.Point(142, 105);
+            this.txtEmailLic.Name = "txtEmailLic";
+            this.txtEmailLic.Size = new System.Drawing.Size(235, 22);
+            this.txtEmailLic.TabIndex = 3;
+            // 
+            // txtDescripcionLic
+            // 
+            this.txtDescripcionLic.Location = new System.Drawing.Point(142, 79);
+            this.txtDescripcionLic.Name = "txtDescripcionLic";
+            this.txtDescripcionLic.Size = new System.Drawing.Size(235, 22);
+            this.txtDescripcionLic.TabIndex = 2;
+            // 
+            // txtApellidoLic
+            // 
+            this.txtApellidoLic.Location = new System.Drawing.Point(142, 53);
+            this.txtApellidoLic.Name = "txtApellidoLic";
+            this.txtApellidoLic.Size = new System.Drawing.Size(235, 22);
+            this.txtApellidoLic.TabIndex = 1;
+            // 
+            // txtNombreLic
+            // 
+            this.txtNombreLic.Location = new System.Drawing.Point(142, 27);
+            this.txtNombreLic.Name = "txtNombreLic";
+            this.txtNombreLic.Size = new System.Drawing.Size(235, 22);
+            this.txtNombreLic.TabIndex = 0;
             // 
             // groupBox2
             // 
@@ -233,87 +254,40 @@
             this.groupBox2.Text = "TIPO LICENCIADO";
             this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
-            // cbxTipoLic
+            // groupBox4
             // 
-            this.cbxTipoLic.FormattingEnabled = true;
-            this.cbxTipoLic.Items.AddRange(new object[] {
-            "INTERNO",
-            "EXTERNO"});
-            this.cbxTipoLic.Location = new System.Drawing.Point(42, 50);
-            this.cbxTipoLic.Name = "cbxTipoLic";
-            this.cbxTipoLic.Size = new System.Drawing.Size(161, 24);
-            this.cbxTipoLic.TabIndex = 0;
+            this.groupBox4.Controls.Add(this.cbxCarreraLic);
+            this.groupBox4.Controls.Add(this.label12);
+            this.groupBox4.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.groupBox4.Location = new System.Drawing.Point(231, 137);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(220, 95);
+            this.groupBox4.TabIndex = 3;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Carrera Lic.";
+            this.groupBox4.Enter += new System.EventHandler(this.groupBox3_Enter);
             // 
-            // cbxFuncionLic
+            // cbxCarreraLic
             // 
-            this.cbxFuncionLic.FormattingEnabled = true;
-            this.cbxFuncionLic.Items.AddRange(new object[] {
-            "Tutor ",
-            "T. Interno 1",
-            "T. Interno 2",
-            "Presidente",
-            "Secretario",
-            "Presidente Minist. Edu.",
-            "Representante UAGRM 1",
-            "Representante UAGRM 2"});
-            this.cbxFuncionLic.Location = new System.Drawing.Point(237, 50);
-            this.cbxFuncionLic.Name = "cbxFuncionLic";
-            this.cbxFuncionLic.Size = new System.Drawing.Size(179, 24);
-            this.cbxFuncionLic.TabIndex = 0;
+            this.cbxCarreraLic.FormattingEnabled = true;
+            this.cbxCarreraLic.Items.AddRange(new object[] {
+            "JEFE DE SISTEMA",
+            "MARQUETIN",
+            "PETROLERO",
+            "OTROS PARA UMENTAR"});
+            this.cbxCarreraLic.Location = new System.Drawing.Point(6, 57);
+            this.cbxCarreraLic.Name = "cbxCarreraLic";
+            this.cbxCarreraLic.Size = new System.Drawing.Size(208, 24);
+            this.cbxCarreraLic.TabIndex = 0;
             // 
-            // txtDescLic
+            // label12
             // 
-            this.txtDescLic.Location = new System.Drawing.Point(42, 104);
-            this.txtDescLic.Name = "txtDescLic";
-            this.txtDescLic.Size = new System.Drawing.Size(374, 22);
-            this.txtDescLic.TabIndex = 1;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(39, 31);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(39, 16);
-            this.label8.TabIndex = 2;
-            this.label8.Text = "TIPO";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(234, 31);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(68, 16);
-            this.label9.TabIndex = 2;
-            this.label9.Text = "FUNCION";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(39, 85);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(99, 16);
-            this.label10.TabIndex = 2;
-            this.label10.Text = "DESCRIPCION";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(59, 186);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(77, 16);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "DOCENTE:";
-            // 
-            // cbxDocenteTip
-            // 
-            this.cbxDocenteTip.FormattingEnabled = true;
-            this.cbxDocenteTip.Items.AddRange(new object[] {
-            "SI",
-            "NO"});
-            this.cbxDocenteTip.Location = new System.Drawing.Point(142, 183);
-            this.cbxDocenteTip.Name = "cbxDocenteTip";
-            this.cbxDocenteTip.Size = new System.Drawing.Size(235, 24);
-            this.cbxDocenteTip.TabIndex = 7;
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(6, 37);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(70, 16);
+            this.label12.TabIndex = 2;
+            this.label12.Text = "NOMBRE ";
             // 
             // groupBox3
             // 
@@ -351,40 +325,67 @@
             this.label11.TabIndex = 2;
             this.label11.Text = "NOMBRE ";
             // 
-            // groupBox4
+            // label10
             // 
-            this.groupBox4.Controls.Add(this.cbxCarreraLic);
-            this.groupBox4.Controls.Add(this.label12);
-            this.groupBox4.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.groupBox4.Location = new System.Drawing.Point(231, 137);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(220, 95);
-            this.groupBox4.TabIndex = 3;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Carrera Lic.";
-            this.groupBox4.Enter += new System.EventHandler(this.groupBox3_Enter);
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(39, 85);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(99, 16);
+            this.label10.TabIndex = 2;
+            this.label10.Text = "DESCRIPCION";
             // 
-            // cbxCarreraLic
+            // label9
             // 
-            this.cbxCarreraLic.FormattingEnabled = true;
-            this.cbxCarreraLic.Items.AddRange(new object[] {
-            "JEFE DE SISTEMA",
-            "MARQUETIN",
-            "PETROLERO",
-            "OTROS PARA UMENTAR"});
-            this.cbxCarreraLic.Location = new System.Drawing.Point(6, 57);
-            this.cbxCarreraLic.Name = "cbxCarreraLic";
-            this.cbxCarreraLic.Size = new System.Drawing.Size(208, 24);
-            this.cbxCarreraLic.TabIndex = 0;
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(234, 31);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(68, 16);
+            this.label9.TabIndex = 2;
+            this.label9.Text = "FUNCION";
             // 
-            // label12
+            // label8
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(6, 37);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(70, 16);
-            this.label12.TabIndex = 2;
-            this.label12.Text = "NOMBRE ";
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(39, 31);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(39, 16);
+            this.label8.TabIndex = 2;
+            this.label8.Text = "TIPO";
+            // 
+            // txtDescLic
+            // 
+            this.txtDescLic.Location = new System.Drawing.Point(42, 104);
+            this.txtDescLic.Name = "txtDescLic";
+            this.txtDescLic.Size = new System.Drawing.Size(374, 22);
+            this.txtDescLic.TabIndex = 1;
+            // 
+            // cbxFuncionLic
+            // 
+            this.cbxFuncionLic.FormattingEnabled = true;
+            this.cbxFuncionLic.Items.AddRange(new object[] {
+            "Tutor ",
+            "T. Interno 1",
+            "T. Interno 2",
+            "Presidente",
+            "Secretario",
+            "Presidente Minist. Edu.",
+            "Representante UAGRM 1",
+            "Representante UAGRM 2"});
+            this.cbxFuncionLic.Location = new System.Drawing.Point(237, 50);
+            this.cbxFuncionLic.Name = "cbxFuncionLic";
+            this.cbxFuncionLic.Size = new System.Drawing.Size(179, 24);
+            this.cbxFuncionLic.TabIndex = 0;
+            // 
+            // cbxTipoLic
+            // 
+            this.cbxTipoLic.FormattingEnabled = true;
+            this.cbxTipoLic.Items.AddRange(new object[] {
+            "INTERNO",
+            "EXTERNO"});
+            this.cbxTipoLic.Location = new System.Drawing.Point(42, 50);
+            this.cbxTipoLic.Name = "cbxTipoLic";
+            this.cbxTipoLic.Size = new System.Drawing.Size(161, 24);
+            this.cbxTipoLic.TabIndex = 0;
             // 
             // FrmNewLicenciado
             // 
@@ -404,10 +405,10 @@
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
 
         }

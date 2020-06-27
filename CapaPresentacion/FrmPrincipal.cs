@@ -428,17 +428,33 @@ namespace CapaPresentacion
         {
             carrera = guardarCarreraClickeada(sender);
             lblTitulo.Text = carrera;
+            FrmListaPerfiles fm = new FrmListaPerfiles();
+            abrirFrmHijo(fm);
+            /*CARGAR LISTADO DE ESTUDIANTES POR ID Y BUSQUEDA VACIA*/
+            fm.loadDataGrid("7", null);
+            ////MessageBox.Show(facultad + " " + carrera);
         }
 
         private void btnComercial_Click(object sender, EventArgs e)
         {
             carrera = guardarCarreraClickeada(sender);
             lblTitulo.Text = carrera;
+            FrmListaPerfiles fm = new FrmListaPerfiles();
+            abrirFrmHijo(fm);
+            /*CARGAR LISTADO DE ESTUDIANTES POR ID Y BUSQUEDA VACIA*/
+            fm.loadDataGrid("3", null);
+            ////MessageBox.Show(facultad + " " + carrera);
         }
 
         private void btnComInternacional_Click(object sender, EventArgs e)
         {
             carrera = guardarCarreraClickeada(sender);
+            lblTitulo.Text = carrera;
+            FrmListaPerfiles fm = new FrmListaPerfiles();
+            abrirFrmHijo(fm);
+            /*CARGAR LISTADO DE ESTUDIANTES POR ID Y BUSQUEDA VACIA*/
+            fm.loadDataGrid("4", null);
+            ////MessageBox.Show(facultad + " " + carrera); = guardarCarreraClickeada(sender);
             lblTitulo.Text = carrera;
         }
 
@@ -446,77 +462,143 @@ namespace CapaPresentacion
         {
             carrera = guardarCarreraClickeada(sender);
             lblTitulo.Text = carrera;
+            FrmListaPerfiles fm = new FrmListaPerfiles();
+            abrirFrmHijo(fm);
+            /*CARGAR LISTADO DE ESTUDIANTES POR ID Y BUSQUEDA VACIA*/
+            fm.loadDataGrid("2", null);
+            ////MessageBox.Show(facultad + " " + carrera);
         }
 
         private void btnContaduria_Click(object sender, EventArgs e)
         {
             carrera = guardarCarreraClickeada(sender);
             lblTitulo.Text = carrera;
+            FrmListaPerfiles fm = new FrmListaPerfiles();
+            abrirFrmHijo(fm);
+            /*CARGAR LISTADO DE ESTUDIANTES POR ID Y BUSQUEDA VACIA*/
+            fm.loadDataGrid("5", null);
+            ////MessageBox.Show(facultad + " " + carrera);
         }
 
         private void btnFinanciera_Click(object sender, EventArgs e)
         {
             carrera = guardarCarreraClickeada(sender);
             lblTitulo.Text = carrera;
+            FrmListaPerfiles fm = new FrmListaPerfiles();
+            abrirFrmHijo(fm);
+            /*CARGAR LISTADO DE ESTUDIANTES POR ID Y BUSQUEDA VACIA*/
+            fm.loadDataGrid("6", null);
+            ////MessageBox.Show(facultad + " " + carrera);
         }
 
         private void btnComunicacion_Click(object sender, EventArgs e)
         {
             carrera = guardarCarreraClickeada(sender);
             lblTitulo.Text = carrera;
+            FrmListaPerfiles fm = new FrmListaPerfiles();
+            abrirFrmHijo(fm);
+            /*CARGAR LISTADO DE ESTUDIANTES POR ID Y BUSQUEDA VACIA*/
+            fm.loadDataGrid("8", null);
+            ////MessageBox.Show(facultad + " " + carrera); = guardarCarreraClickeada(sender);
+            lblTitulo.Text = carrera;
         }
         private void btnIndustrial_Click(object sender, EventArgs e)
         {
             carrera = guardarCarreraClickeada(sender);
             lblTitulo.Text = carrera;
+            FrmListaPerfiles fm = new FrmListaPerfiles();
+            abrirFrmHijo(fm);
+            /*CARGAR LISTADO DE ESTUDIANTES POR ID Y BUSQUEDA VACIA*/
+            fm.loadDataGrid("9", null);
+            ////MessageBox.Show(facultad + " " + carrera);
         }
 
         private void btnPetrolera_Click(object sender, EventArgs e)
         {
             carrera = guardarCarreraClickeada(sender);
             lblTitulo.Text = carrera;
+            FrmListaPerfiles fm = new FrmListaPerfiles();
+            abrirFrmHijo(fm);
+            /*CARGAR LISTADO DE ESTUDIANTES POR ID Y BUSQUEDA VACIA*/
+            fm.loadDataGrid("10", null);
+            ////MessageBox.Show(facultad + " " + carrera);
         }
 
         private void btnElectronica_Click(object sender, EventArgs e)
         {
             carrera = guardarCarreraClickeada(sender);
             lblTitulo.Text = carrera;
+            FrmListaPerfiles fm = new FrmListaPerfiles();
+            abrirFrmHijo(fm);
+            /*CARGAR LISTADO DE ESTUDIANTES POR ID Y BUSQUEDA VACIA*/
+            fm.loadDataGrid("13", null);
+            ////MessageBox.Show(facultad + " " + carrera);
         }
 
         private void iconButton5_Click(object sender, EventArgs e)
         {
             carrera = guardarCarreraClickeada(sender);
             lblTitulo.Text = carrera;
+            FrmListaPerfiles fm = new FrmListaPerfiles();
+            abrirFrmHijo(fm);
+            /*CARGAR LISTADO DE ESTUDIANTES POR ID Y BUSQUEDA VACIA*/
+            fm.loadDataGrid("14", null);
+            ////MessageBox.Show(facultad + " " + carrera);
         }
 
         private void btnMecanica_Click(object sender, EventArgs e)
         {
             carrera = guardarCarreraClickeada(sender);
             lblTitulo.Text = carrera;
+            FrmListaPerfiles fm = new FrmListaPerfiles();
+            abrirFrmHijo(fm);
+            /*CARGAR LISTADO DE ESTUDIANTES POR ID Y BUSQUEDA VACIA*/
+            fm.loadDataGrid("12", null);
+            ////MessageBox.Show(facultad + " " + carrera);
         }
 
         private void btnRedes_Click(object sender, EventArgs e)
         {
             carrera = guardarCarreraClickeada(sender);
             lblTitulo.Text = carrera;
+            FrmListaPerfiles fm = new FrmListaPerfiles();
+            abrirFrmHijo(fm);
+            /*CARGAR LISTADO DE ESTUDIANTES POR ID Y BUSQUEDA VACIA*/
+            fm.loadDataGrid("11", null);
+            ////MessageBox.Show(facultad + " " + carrera);
         }
 
         private void btnElectrica_Click(object sender, EventArgs e)
         {
             carrera = guardarCarreraClickeada(sender);
             lblTitulo.Text = carrera;
+            FrmListaPerfiles fm = new FrmListaPerfiles();
+            abrirFrmHijo(fm);
+            /*CARGAR LISTADO DE ESTUDIANTES POR ID Y BUSQUEDA VACIA*/
+            fm.loadDataGrid("15", null);
+            ////MessageBox.Show(facultad + " " + carrera);
         }
 
         private void btnDerecho_Click(object sender, EventArgs e)
         {
             carrera = guardarCarreraClickeada(sender);
             lblTitulo.Text = carrera;
+            FrmListaPerfiles fm = new FrmListaPerfiles();
+            abrirFrmHijo(fm);
+            /*CARGAR LISTADO DE ESTUDIANTES POR ID Y BUSQUEDA VACIA*/
+            fm.loadDataGrid("16", null);
+            ////MessageBox.Show(facultad + " " + carrera);
         }
 
         private void btnRelInter_Click(object sender, EventArgs e)
         {
             carrera = guardarCarreraClickeada(sender);
             lblTitulo.Text = carrera;
+            FrmListaPerfiles fm = new FrmListaPerfiles();
+            abrirFrmHijo(fm);
+            /*CARGAR LISTADO DE ESTUDIANTES POR ID Y BUSQUEDA VACIA*/
+            fm.loadDataGrid("17", null);
+            ////MessageBox.Show(facultad + " " + carrera);
         }
 
         private void btnPsicologia_Click(object sender, EventArgs e)
