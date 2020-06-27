@@ -28,6 +28,11 @@ namespace CapaDatos
             cnx = new SQLiteConnection("data source=" + pathBd + @"\bd\perfiles.db");
             cnx.Open();
         }
+
+        public SQLiteConnection getConn()
+        {
+            return new SQLiteConnection("data source=" + pathBd + @"\bd\perfiles.db");
+        }
         public void insertarDatos(string sql)
         {
             abrirConexion();

@@ -60,8 +60,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="Conexion.cs" />
+    <Compile Include="dto\CarreraDTO.cs" />
+    <Compile Include="dto\Estudiante.cs" />
+    <Compile Include="dto\EstudianteDTO.cs" />
+    <Compile Include="dto\Licenciado.cs" />
+    <Compile Include="dto\LicenciadoDTO.cs" />
+    <Compile Include="dto\PerfilTesisDTO.cs" />
+    <Compile Include="dto\TipoLicenciadoDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

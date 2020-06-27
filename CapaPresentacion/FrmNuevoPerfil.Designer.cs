@@ -107,6 +107,7 @@
             this.btnGuardarNuevoP.TabIndex = 36;
             this.btnGuardarNuevoP.Text = "Guardar";
             this.btnGuardarNuevoP.UseVisualStyleBackColor = false;
+            this.btnGuardarNuevoP.Click += new System.EventHandler(this.btnGuardarNuevoP_Click);
             // 
             // groupBox1
             // 
@@ -161,6 +162,7 @@
             // 
             // txtTutor
             // 
+            this.txtTutor.Enabled = false;
             this.txtTutor.Location = new System.Drawing.Point(159, 99);
             this.txtTutor.Name = "txtTutor";
             this.txtTutor.Size = new System.Drawing.Size(267, 20);

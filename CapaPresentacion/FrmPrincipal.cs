@@ -46,7 +46,8 @@ namespace CapaPresentacion
         private void btnNuevoPerfil_Click(object sender, EventArgs e)
         {
             activarBoton(sender, ColoresRgb.rojoUtepsa);
-            abrirFrmHijo(new FrmNuevoPerfil());
+            FrmNuevoPerfil fm = new FrmNuevoPerfil();
+            abrirFrmHijo(fm);
            
         }
         private void btnNuevaDefensa_Click(object sender, EventArgs e)
@@ -415,7 +416,10 @@ namespace CapaPresentacion
         {
             carrera = guardarCarreraClickeada(sender);
             lblTitulo.Text = carrera;
-            abrirFrmHijo(new FrmListaPerfiles());
+            FrmListaPerfiles fm = new FrmListaPerfiles();
+            abrirFrmHijo(fm);
+            /*CARGAR LISTADO DE ESTUDIANTES POR ID Y BUSQUEDA VACIA*/
+            fm.loadDataGrid("1", null);
             ////MessageBox.Show(facultad + " " + carrera);
 
         }

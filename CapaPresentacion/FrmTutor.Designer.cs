@@ -59,6 +59,7 @@
             this.btnCargarTutor.TabIndex = 23;
             this.btnCargarTutor.Text = "Cargar";
             this.btnCargarTutor.UseVisualStyleBackColor = false;
+            this.btnCargarTutor.Click += new System.EventHandler(this.btnCargarTutor_Click);
             // 
             // btnCancelarTutor
             // 

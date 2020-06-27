@@ -62,6 +62,7 @@
             this.btnBuscarPerfil.Size = new System.Drawing.Size(44, 20);
             this.btnBuscarPerfil.TabIndex = 23;
             this.btnBuscarPerfil.UseVisualStyleBackColor = true;
+            this.btnBuscarPerfil.Click += new System.EventHandler(this.btnBuscarPerfil_Click);
             // 
             // lblBuscar
             // 
