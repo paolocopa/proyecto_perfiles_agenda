@@ -869,6 +869,7 @@
             this.btnCargarTribu2.TabIndex = 5;
             this.btnCargarTribu2.Text = "Cargar";
             this.btnCargarTribu2.UseVisualStyleBackColor = false;
+            this.btnCargarTribu2.Click += new System.EventHandler(this.btnCargarTribu2_Click);
             // 
             // btnElegirTribu1
             // 
@@ -883,6 +884,7 @@
             this.btnElegirTribu1.TabIndex = 5;
             this.btnElegirTribu1.Text = "Cargar";
             this.btnElegirTribu1.UseVisualStyleBackColor = false;
+            this.btnElegirTribu1.Click += new System.EventHandler(this.btnElegirTribu1_Click);
             // 
             // dateTimePicker2
             // 

@@ -103,11 +103,11 @@
             this.btnEdiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEdiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEdiar.ForeColor = System.Drawing.Color.White;
-            this.btnEdiar.Location = new System.Drawing.Point(626, 472);
+            this.btnEdiar.Location = new System.Drawing.Point(601, 472);
             this.btnEdiar.Name = "btnEdiar";
-            this.btnEdiar.Size = new System.Drawing.Size(100, 35);
+            this.btnEdiar.Size = new System.Drawing.Size(125, 35);
             this.btnEdiar.TabIndex = 19;
-            this.btnEdiar.Text = "Editar";
+            this.btnEdiar.Text = "Editar Reviciones";
             this.btnEdiar.UseVisualStyleBackColor = false;
             this.btnEdiar.Click += new System.EventHandler(this.btnEdiar_Click);
             // 

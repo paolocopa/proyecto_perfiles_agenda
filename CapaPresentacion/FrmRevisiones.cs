@@ -63,5 +63,17 @@ namespace CapaPresentacion
             FrmNewLicenciado otr2 = new FrmNewLicenciado();
             otr2.ShowDialog();
         }
+
+        private void btnElegirTribu1_Click(object sender, EventArgs e)
+        {
+            FrmNewLicenciado n1 = new FrmNewLicenciado();
+            n1.ShowDialog();
+        }
+
+        private void btnCargarTribu2_Click(object sender, EventArgs e)
+        {
+            FrmNewLicenciado n2 = new FrmNewLicenciado();
+            n2.ShowDialog();
+        }
     }
 }
