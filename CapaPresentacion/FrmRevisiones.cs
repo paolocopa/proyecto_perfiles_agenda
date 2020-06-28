@@ -10,26 +10,21 @@ using System.Windows.Forms;
 
 namespace CapaPresentacion
 {
-    public partial class FrmNuevaDefensaExterna : Form
+    public partial class FrmRevisiones : Form
     {
-        public FrmNuevaDefensaExterna()
+        public FrmRevisiones()
         {
             InitializeComponent();
         }
 
-        private void btnCerrar_Click(object sender, EventArgs e)
+        private void btnCancelarEdit_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void btnCancel2Rev_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void cmbTipo_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
+            this.Close();
         }
     }
 }

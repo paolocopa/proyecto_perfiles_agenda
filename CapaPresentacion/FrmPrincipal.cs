@@ -45,8 +45,7 @@ namespace CapaPresentacion
         private void btnNuevoPerfil_Click(object sender, EventArgs e)
         {
             activarBoton(sender, ColoresRgb.rojoUtepsa);
-            //Form frmNuevoPerfil = new FrmNuevoPerfil();
-            //frmNuevoPerfil.Show();
+
             /////este codigo controla que no se abra dos veces el formulario
             Form frmNuevoPerfil = Application.OpenForms.Cast<Form>().FirstOrDefault(x => x is FrmNuevoPerfil);
 
@@ -58,8 +57,9 @@ namespace CapaPresentacion
             }
 
             //sino existe la instancia se crea una nueva
+            lblTitulo.Text = "NUEVO PERFIL";
             frmNuevoPerfil = new FrmNuevoPerfil();
-            frmNuevoPerfil.Show();
+            abrirFrmHijo(frmNuevoPerfil);
         }
         private void btnNuevaDefensa_Click(object sender, EventArgs e)
         {

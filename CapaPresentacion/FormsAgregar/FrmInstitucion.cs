@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CapaPresentacion
+namespace CapaPresentacion.FormsAgregar
 {
-    public partial class FrmNuevaDefensaExterna : Form
+    public partial class FrmInstitucion : Form
     {
-        public FrmNuevaDefensaExterna()
+        public FrmInstitucion()
         {
             InitializeComponent();
         }
@@ -20,16 +20,6 @@ namespace CapaPresentacion
         private void btnCerrar_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void cmbTipo_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

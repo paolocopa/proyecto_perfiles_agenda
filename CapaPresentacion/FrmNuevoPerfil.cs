@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CapaDatos;
 
 namespace CapaPresentacion
 {
@@ -15,6 +16,7 @@ namespace CapaPresentacion
         public FrmNuevoPerfil()
         {
             InitializeComponent();
+            cargarcarreratest();
         }
 
         private void btnCancelarNuevop_Click(object sender, EventArgs e)
@@ -40,5 +42,42 @@ namespace CapaPresentacion
             FrmLicenciado obj = new FrmLicenciado();
             obj.Show();
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnElegirTutor_Click_1(object sender, EventArgs e)
+        {
+            FrmTutor frm = new FrmTutor();
+            frm.Show();
+        }
+
+        private void pnlBarraTitulo_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+
+        #region CARGARCOMBOBOX
+        public void cargarcarreratest()
+        {
+            CapaDatos.Models.Carrera obj = new CapaDatos.Models.Carrera();
+
+            cmbCarrera.DataSource = obj.Select();
+            cmbCarrera.DisplayMember = "nombre";
+            //cmbCarrera.ValueMember = "id";
+        }
+
+        #endregion
+
+
+
     }
 }

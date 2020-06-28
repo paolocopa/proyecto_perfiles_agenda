@@ -48,5 +48,11 @@ namespace CapaPresentacion
             }
            
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FrmRevisiones frm = new FrmRevisiones();
+            frm.Show();
+        }
     }
 }
