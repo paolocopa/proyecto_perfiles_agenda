@@ -26,5 +26,30 @@ namespace CapaPresentacion
         {
             this.Close();
         }
+
+        private void btnGuardarRev_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtEntregaT_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dttEntregaAlumno1er_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dttEntregaAlumno1erT1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
